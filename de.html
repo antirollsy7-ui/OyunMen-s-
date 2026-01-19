@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oyun Menüsü</title>
+    <style>
+        body {
+            background-color: #0f0f0f;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .buton-konteyner {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            align-items: center;
+        }
+
+        /* Redeem Yazıları İçin Stil */
+        .redeem-bilgi {
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            font-size: 14px;
+            margin: 5px 0;
+            line-height: 1.4;
+        }
+
+        .kod-vurgu {
+            color: #fff;
+            font-weight: bold;
+            display: block;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+        
+        .oyun-butonu {
+            padding: 20px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            transition: all 0.2s ease;
+            width: 420px;
+            text-align: center;
+            outline: none;
+            margin-bottom: 5px;
+        }
+
+        /* Üst Buton: Flappy Bird Pro */
+        .flappy-btn {
+            background: linear-gradient(45deg, #2193b0, #6dd5ed);
+            box-shadow: 0 4px 15px rgba(33, 147, 176, 0.3);
+        }
+
+        /* Alt Buton: Hız Tutkunu */
+        .hiz-btn {
+            background: linear-gradient(45deg, #eb3349, #f45c43);
+            box-shadow: 0 4px 15px rgba(235, 51, 73, 0.3);
+        }
+
+        .oyun-butonu:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+            box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .oyun-butonu:active {
+            transform: scale(0.97);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="buton-konteyner">
+        <div class="redeem-bilgi">
+            FLAPPYBİRD PRO: Manzaralı Edition için REEDEM kodları:<br>
+            <span class="kod-vurgu">KODUMUNKEKOSU</span>
+            (adidas ceket, şapka)
+        </div>
+
+        <button class="oyun-butonu flappy-btn" onclick="window.location.href='https://antirollsy7-ui.github.io/FlappyBirdProV1.6/'">
+            FLAPPY BİRD PRO: Manzaralı Edition
+        </button>
+
+        <div style="height: 20px;"></div> <button class="oyun-butonu hiz-btn" onclick="window.location.href='https://antirollsy7-ui.github.io/H-zTutkunuV1.0/'">
+            HIZ TUTKUNU: Deity Edition
+        </button>
+
+        <div class="redeem-bilgi">
+            HIZ TUTKUNU: Deity Edition için REEDEM kodları:<br>
+            <span class="kod-vurgu">HIZLANAMK</span>
+            (3000💵)
+        </div>
+    </div>
+
+</body>
+</html>
